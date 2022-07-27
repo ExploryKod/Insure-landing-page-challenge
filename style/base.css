@@ -1,7 +1,4 @@
 @import './variables.css';
-@import './responsive.css';
-
-@import './header.css';
 
 /* Main page css files */
 @import './first-section.css';
@@ -9,6 +6,7 @@
 @import './third-section.css';
 @import './active-state.css';
 
+@import './header.css';
 @import './footer.css';
 
 /* Global styles to reset css */

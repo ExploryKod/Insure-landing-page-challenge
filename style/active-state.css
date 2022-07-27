@@ -1,0 +1,10 @@
+#first-section-text button:hover,
+#third-section-text button:hover {
+    cursor: pointer;
+}
+
+#first-section-text button:active,
+#third-section-text button:active {
+    background-color: var(--white-focus-btn);
+    color: var(--neutral-dark-violet);
+}

@@ -1,0 +1,83 @@
+@import './base.css';
+
+header {
+
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 165px 112px 548px auto 165px;
+}
+
+.image-logo {
+    grid-column: 2;
+    position: absolute;
+    left: 168px;
+    align-self: center;
+}
+
+#header-nav {
+    justify-self: start;
+    align-self: center;
+    grid-column: 4;
+    left: 0;
+}
+
+#header-nav ul {
+    justify-self: start;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto;
+}
+
+#header-nav ul li {
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+
+}
+
+#header-nav li a {
+    font-family: var(--body-fonts);
+    font-size: 0.815rem;
+    font-weight: bold;
+    color: var(--neutral-dark-grayish);
+}
+
+ul li .how-we-work {
+    padding-left: 0;
+}
+
+#account {
+    padding-right: 33px;
+}
+
+#account:hover {
+    cursor: pointer;
+}
+
+#header-nav ul li:nth-of-type(3):active a {
+    color: var(--neutral-dark-violet);
+}
+
+#view-plans {
+    border: 1px solid var(--neutral-dark-violet);
+    color: var(--neutral-dark-violet);
+    padding: 13px 28px;
+}
+
+#view-plans:hover {
+    cursor: pointer;
+}
+
+#view-plans:active {
+    background-color: var(--neutral-dark-violet);
+
+}
+
+#header-nav ul li:nth-of-type(4):active a {
+    color: var(--white-focus-btn);
+}
+
+.hamburger-containment {
+    display: none;
+}

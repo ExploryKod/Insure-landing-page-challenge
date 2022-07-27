@@ -1,3 +1,5 @@
+@import './base.css';
+
 footer {
     grid-row: 3;
     grid-column: 2 / span 2;
