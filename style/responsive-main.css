@@ -11,7 +11,6 @@
 
     .bg-intro-left-form-mobile,
     .bg-intro-right-form-mobile,
-    .bg-third-section-form-mobile,
     .bg-footer-image-mobile {
         display: block;
     }
@@ -201,9 +200,14 @@
 
         max-width: 95%;
         height: auto;
-        padding: 1rem 0.5rem;
+        padding: 4.5rem 0.5rem;
         margin: 1rem auto;
+
         background-color: var(--primary-dark-violet);
+        background-image: url(../images/bg-pattern-how-we-work-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: auto;
 
         display: flex;
         flex-direction: column;
@@ -251,7 +255,12 @@
     }
 
     #footer-nav-1 {
-        margin-top: 88px;
+
+        background-image: url(../images/bg-pattern-footer-mobile.svg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        padding-top: 88px;
+        padding-bottom: 2.5rem;
         display: grid;
         grid-template-rows: 1fr 32px 1fr;
         grid-template-columns: 375px;
@@ -280,6 +289,25 @@
         align-items: center;
     }
 
+    #footer-nav-2 div:nth-of-type(1) {
+        border-top: 1px solid var(--primary-dark-violet);
+        padding: 0;
+    }
+
+    #footer-nav-2 div h4 {
+        margin: 0;
+        margin-top: 2.5rem;
+        margin-bottom: 2.25rem;
+    }
+
+    #footer-nav-2 div:not(:last-child) ul {
+        margin: 0;
+    }
+
+    #footer-nav-2 div:last-child ul {
+        margin-bottom: 2.5rem;
+    }
+
     #footer-nav-2 div {
         width: 255px;
         display: flex;
@@ -300,6 +328,7 @@
 
     #footer-nav-2 div ul {
         padding: 0;
+        margin: 0;
     }
 
     #footer-nav-2 div ul li a {
@@ -310,7 +339,7 @@
     }
 
     .attribution {
-
+        margin-bottom: 2.5rem;
         color: var(--primary-greyish-blue);
         text-align: center;
         flex-direction: column;
