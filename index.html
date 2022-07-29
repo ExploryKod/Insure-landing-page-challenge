@@ -8,7 +8,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style/base.css">
-  <link rel="stylesheet" href="./style/responsive.css">
+  <link rel="stylesheet" href="./style/responsive-header.css">
+  <link rel="stylesheet" href="./style/responsive-main.css">
   <title>Insure Homepage</title>
 
 </head>
@@ -21,20 +22,38 @@
       <img src="images/logo.svg" alt="insure logo">
     </div>
 
-    <nav id="header-nav">
+
+    <!-- (A) MENU WRAPPER -->
+    <nav id="hamnav">
+      <!-- (B) THE HAMBURGER -->
+      <input title="checkbox" type="checkbox" id="hamburger" />
+      <label for="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+
+      <!-- (C) MENU ITEMS -->
+      <div id="hamitems">
+        <ul>
+          <li><a href="#">HOW WE WORK</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">ACCOUNT</a></li>
+          <li><a class="view-plans" href="#">VIEW PLANS</a></li>
+        </ul>
+        <div class="bg-nav-form-mobile"><img alt="forme grise gauche" src="./images/bg-pattern-mobile-nav.svg"></div>
+      </div>
+    </nav>
+
+    <nav class="header-nav">
       <ul>
         <li class="how-we-work"><a href="#" class="how-we-work">HOW WE WORK</a></li>
         <li><a href="#">BLOG</a></li>
-        <li id="account"><a href="#">ACCOUNT</a></li>
-        <li id="view-plans"><a href="#">VIEW PLANS</a></li>
+        <li class="account"><a href="#">ACCOUNT</a></li>
+        <li class="view-plans"><a href="#">VIEW PLANS</a></li>
       </ul>
     </nav>
-
-    <div class="hamburger-containment">
-      <div class="hamburger-line"></div>
-      <div class="hamburger-line"></div>
-      <div class="hamburger-line"></div>
-    </div>
 
   </header>
 
@@ -101,6 +120,8 @@
         <button>HOW WE WORK</button>
         <div class="bg-third-section-form"><img class="bg-third-section-image" alt="forme grise à droite"
             src="./images/bg-pattern-how-we-work-desktop.svg"></div>
+        <div class="bg-third-section-form-mobile"><img class="bg-third-section-image" alt="forme grise à droite"
+            src="./images/bg-pattern-how-we-work-mobile.svg"></div>
       </section>
 
     </section>
@@ -108,6 +129,10 @@
   </main>
 
   <footer>
+    <div class="bg-third-section-form-mobile"><img class="bg-footer-image" alt="forme grise"
+        src="./images/bg-pattern-footer-desktop.svg"></div>
+    <div class="bg-third-section-form-mobile"><img class="bg-footer-image-mobile" alt="forme grise"
+        src="./images/bg-pattern-footer-mobile.svg"></div>
     <nav id="footer-nav-1">
       <div class='image-logo'>
         <img src="images/logo.svg" alt="insure logo">
@@ -164,11 +189,11 @@
     </nav>
 
     <div class="attribution">
-      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor. </a> </p>
+      <p>Challenge by <a title="attribution" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+          Mentor. </a> </p>
       <p>Coded by <a href="https://github.com/ExploryKod">Amaury Franssen.</a></p>
     </div>
   </footer>
-
 
 </body>
 
