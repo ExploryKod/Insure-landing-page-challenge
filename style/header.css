@@ -1,25 +1,28 @@
 @import './base.css';
 
 header {
+    background-color: var(--neutral-light-grey);
+    position: relative;
+    z-index: 5;
     grid-column: 1;
     grid-row: 1;
     display: grid;
-    grid-template-columns: minmax(165px, 1fr) 112px 548px auto minmax(165px, 1fr);
+    /* 442px = 165px + 112 + 165px */
+    grid-template-columns: minmax(165px, 1fr) 112px minmax(calc(100vw - 442px), auto) 0px minmax(165px, 1fr);
 }
 
 .image-logo {
     grid-column: 2;
-    position: absolute;
-    left: 168px;
     align-self: center;
+    justify-self: start;
 }
 
 /* Main navigation bar */
 
 .header-nav {
-    justify-self: start;
+    justify-self: end;
     align-self: center;
-    grid-column: 4;
+    grid-column: 3 / span 2;
     left: 0;
 }
 

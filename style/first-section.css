@@ -81,7 +81,7 @@
     z-index: 2;
     width: 540px;
     height: 650px;
-
+    overflow: visible;
     grid-column: 4;
     grid-row: 2;
 

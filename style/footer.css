@@ -16,13 +16,17 @@ footer {
     padding-bottom: 2.25rem;
     grid-column: 2;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
 
 #social-icon {
-    align-self: flex-end;
+    align-self: center;
+}
+
+#social-icon a {
+    cursor: pointer;
 }
 
 .footer-nav-2 {
