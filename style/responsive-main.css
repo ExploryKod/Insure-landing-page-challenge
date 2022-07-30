@@ -261,6 +261,7 @@
         background-repeat: no-repeat;
         padding-top: 88px;
         padding-bottom: 2.5rem;
+        margin: 0 auto;
         display: grid;
         grid-template-rows: 1fr 32px 1fr;
         grid-template-columns: 375px;
