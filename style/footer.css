@@ -1,6 +1,11 @@
 @import './base.css';
 
 footer {
+    background-color: var(--neutral-light-grey);
+    background-image: url(../images/bg-pattern-footer-desktop.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
     grid-row: 3;
     grid-column: 2 / span 2;
     display: grid;
@@ -8,10 +13,12 @@ footer {
 }
 
 #footer-nav-1 {
+    padding-bottom: 2.25rem;
     grid-column: 2;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 #social-icon {
@@ -19,6 +26,8 @@ footer {
 }
 
 #footer-nav-2 {
+    padding-top: 3rem;
+    border-top: 1px solid var(--primary-dark-violet);
     grid-column: 2;
     display: flex;
     justify-content: space-between;
@@ -32,6 +41,7 @@ footer {
 }
 
 #footer-nav-2 div h4 {
+    margin-top: 0;
     line-height: 15px;
     font-weight: 700;
     font-size: 13px;
