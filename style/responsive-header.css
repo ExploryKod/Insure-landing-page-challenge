@@ -41,12 +41,6 @@
         cursor: pointer;
     }
 
-
-    /* (B) HORIZONTAL MENU ITEMS */
-    .mobile-menu {
-        display: none;
-    }
-
     .mobile-menu li a {
         font-size: 1.5rem;
         position: relative;
@@ -65,8 +59,8 @@
     }
 
     .mobile-menu li a:hover {
-        transform: scale(1.5);
-        transition: transform 1s ease-in;
+        transform: scale(1.1);
+        transition: transform 0.5s ease-in;
     }
 
     /* hide hamburger menu */
@@ -108,7 +102,8 @@
 
     /* toggle menu */
     .mobile-menu {
-        display: none;
+        display: flex;
+        transform: translateX(200%);
     }
 
     .mobile-menu ul {
@@ -121,14 +116,15 @@
         width: 100%;
         height: 90vh;
         background-color: var(--primary-dark-violet);
-        transition: all 2s ease-in;
+        transform: translateX(0%);
+        transition: transform 1000ms ease-in;
+
         display: flex;
         flex-direction: column;
         position: fixed;
         top: 10vh;
         z-index: 3;
         padding: 0;
-        transition: all 1.5s ease-in;
     }
 
     .mobile-nav-icon input:checked+label {
@@ -158,11 +154,20 @@
     .view-plans {
         border: 1px solid var(--neutral-light-grey);
         color: var(--neutral-dark-violet);
+        max-width: 250px;
+        margin: 0 auto;
+
+    }
+
+    .mobile-menu ul li {
         cursor: pointer;
+        background-color: none;
     }
 
     .view-plans:active {
-        background-color: var(--neutral-dark-violet);
+        background-color: var(--neutral-light-grey);
+        color: var(--neutral-dark-violet);
+        cursor: pointer;
     }
 
     .bg-nav-form-mobile {
