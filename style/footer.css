@@ -5,14 +5,14 @@ footer {
     background-image: url(../images/bg-pattern-footer-desktop.svg);
     background-position: top left;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
     grid-row: 3;
-    grid-column: 2 / span 2;
+    grid-column: 1 / span 2;
     display: grid;
     grid-template-columns: 165px auto 165px;
 }
 
-#footer-nav-1 {
+.footer-nav-1 {
     padding-bottom: 2.25rem;
     grid-column: 2;
     display: flex;
@@ -25,7 +25,7 @@ footer {
     align-self: flex-end;
 }
 
-#footer-nav-2 {
+.footer-nav-2 {
     padding-top: 3rem;
     border-top: 1px solid var(--primary-dark-violet);
     grid-column: 2;
@@ -33,32 +33,44 @@ footer {
     justify-content: space-between;
 }
 
-#footer-nav-2 div {
+.footer-nav-2 div {
     width: 255px;
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
 
-#footer-nav-2 div h4 {
+.footer-nav-2 div h2 {
     margin-top: 0;
+    margin-bottom: 2.25rem;
     line-height: 15px;
     font-weight: 700;
     font-size: 13px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: var(--neutral-dark-grayish);
+    color: hsla(271, 5%, 51%, 1);
     font-family: var(--body-fonts);
 }
 
-#footer-nav-2 div ul {
+.footer-nav-2 div ul {
     padding: 0;
+    margin: 0;
 }
 
-#footer-nav-2 div ul li a {
-    color: var(--primary-dark-violet);
+.footer-nav-2 ul li {
+    margin-bottom: 1rem;
+}
+
+.footer-nav-2 div ul li a {
+    color: hsla(256, 26%, 20%, 1);
     font-family: var(--body-fonts);
     text-transform: uppercase;
     text-decoration: none;
+    line-height: 15px;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1.5px;
 }
 
 .attribution {

@@ -24,7 +24,7 @@
 
 
     <!-- (A) MENU WRAPPER -->
-    <nav id="hamnav">
+    <nav class="mobile-nav-icon" aria-label="mobile-navigation-header">
       <!-- (B) THE HAMBURGER -->
       <input title="checkbox" type="checkbox" id="hamburger" />
       <label for="hamburger">
@@ -35,7 +35,7 @@
 
 
       <!-- (C) MENU ITEMS -->
-      <div id="hamitems">
+      <div class="mobile-menu">
         <ul>
           <li><a href="#">HOW WE WORK</a></li>
           <li><a href="#">BLOG</a></li>
@@ -46,7 +46,7 @@
       </div>
     </nav>
 
-    <nav class="header-nav">
+    <nav class="header-nav" aria-label="header-navigation">
       <ul>
         <li class="how-we-work"><a href="#" class="how-we-work">HOW WE WORK</a></li>
         <li><a href="#">BLOG</a></li>
@@ -60,9 +60,9 @@
   <main>
 
     <section id="first-section">
-      <div id="line"></div>
-      <div id="first-section-text">
-        <h1>Humanizing your insurance.</h1>
+      <div class="line"></div>
+      <div class="first-section-text">
+        <h1><span>Humanizing</span><span>your insurance.</span></h1>
 
         <p id="first-paragraph">Get your life insurance coverage easier and faster. We blend our expertise
           and technology to help you find the plan that’s right for you. Ensure you
@@ -73,7 +73,7 @@
       <div class="bg-intro-left-form"><img class="bg-intro-left-image" alt="forme grise gauche"
           src="./images/bg-pattern-intro-left-desktop.svg"></div>
 
-      <img src="images/image-intro-desktop.jpg" alt="image from intro" id="image-intro">
+      <img src="images/image-intro-desktop.jpg" alt="image from intro" class="image-intro">
       <div class="bg-intro-right-form"><img class="bg-intro-right-image" alt="forme grise droite"
           src="./images/bg-pattern-intro-right-desktop.svg"></div>
     </section>
@@ -81,14 +81,11 @@
     <section id="second-section">
 
       <section class="second-section-title">
-        <div id=line-2></div>
-        <h2>We are different</h2>
-      </section>
-      <section class="second-section-title-mobile">
-        <div id=line-resp-2></div>
+        <div class=line-2></div>
         <h2>We're different</h2>
       </section>
-      <section id="icon-articles">
+
+      <section class="icon-articles">
         <article>
           <img src="images/icon-snappy-process.svg" alt="snappy process icon">
           <h3>Snappy Process</h3>
@@ -113,9 +110,9 @@
     </section>
 
     <section id="third-section">
-      <section id="third-section-text">
+      <section class="third-section-text">
         <div>
-          <h2>Find out more about how we work</h2>
+          <h2><span>Find out more</span> <span>about how we work</span></h2>
         </div>
         <button>HOW WE WORK</button>
         <div class="bg-third-section-form"><img class="bg-third-section-image" alt="forme grise à droite"
@@ -128,7 +125,7 @@
 
   <footer>
 
-    <nav id="footer-nav-1">
+    <nav class="footer-nav-1" aria-label="footer-social-navigation">
       <div class='image-logo'>
         <img src="images/logo.svg" alt="insure logo">
       </div>
@@ -140,9 +137,9 @@
       </div>
     </nav>
 
-    <nav id="footer-nav-2">
+    <nav class="footer-nav-2" aria-label="footer-navigation">
       <div>
-        <h4>Our company</h4>
+        <h2>Our company</h2>
         <ul>
           <li><a href="#">How we work</a></li>
           <li><a href="#"> Why Insure?</a></li>
@@ -152,7 +149,7 @@
       </div>
 
       <div>
-        <h4>Help me</h4>
+        <h2>Help me</h2>
         <ul>
           <li><a href="#"> FAQ</a></li>
           <li><a href="#">Terms of use</a> </li>
@@ -163,7 +160,7 @@
 
 
       <div>
-        <h4>Contact</h4>
+        <h2>Contact</h2>
         <ul>
           <li><a href="#"> Sales </a></li>
           <li><a href="#"> Support </a></li>
@@ -172,7 +169,7 @@
       </div>
 
       <div>
-        <h4>Others</h4>
+        <h2>Others</h2>
         <ul>
           <li><a href="#"> Careers </a></li>
           <li><a href="#"> Press </a></li>

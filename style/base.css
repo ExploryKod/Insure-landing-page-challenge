@@ -30,12 +30,26 @@ body {
     margin: 0;
 }
 
+p,
+a,
+li {
+    font-family: var(--body-fonts);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--headings-fonts);
+}
+
 /* Layout set for header, main page and footer */
 
 .body-layout {
     display: grid;
     grid-template-rows: 80px 1937px 393px;
     grid-template-columns: auto;
+    grid-template-columns: 100%;
+    justify-content: center;
 }
 
 /* Layout set for main page */
@@ -43,8 +57,9 @@ body {
 main {
 
     grid-row: 2;
-    grid-column: 2;
-
+    grid-column: 1;
     display: grid;
     grid-template-rows: 600px 783px 554px;
+    grid-template-columns: 100%;
+    justify-content: center;
 }

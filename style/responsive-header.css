@@ -1,7 +1,7 @@
 @import './base.css';
 @import './variables.css';
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px) {
 
     header {
         width: 100%;
@@ -27,7 +27,7 @@
 
 
 
-    #hamnav {
+    .mobile-nav-icon {
         display: block;
         width: 100%;
         height: 10vh;
@@ -40,11 +40,11 @@
 
 
     /* (B) HORIZONTAL MENU ITEMS */
-    #hamitems {
+    .mobile-menu {
         display: none;
     }
 
-    #hamitems li a {
+    .mobile-menu li a {
         font-size: 1.5rem;
         position: relative;
         z-index: 3;
@@ -61,18 +61,19 @@
         height: 2.5rem;
     }
 
-    #hamitems li a:hover {
-        background: #af0d0d;
+    .mobile-menu li a:hover {
+        transform: scale(1.5);
+        transition: transform 1s ease-in;
     }
 
     /* hide hamburger menu */
-    #hamnav label,
+    .mobile-nav-icon label,
     #hamburger {
         display: none;
     }
 
     /* show hamburger icon */
-    #hamnav label {
+    .mobile-nav-icon label {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -97,53 +98,54 @@
         border: 2px solid black;
     }
 
-    #hamnav label span {
+    .mobile-nav-icon label span {
         width: 100%;
         border-top: 2px solid black;
     }
 
     /* toggle menu */
-    #hamitems {
+    .mobile-menu {
         display: none;
     }
 
-    #hamitems ul {
+    .mobile-menu ul {
         padding: 0 24px;
         padding-top: 40px;
         margin: 0;
     }
 
-    #hamnav input:checked~#hamitems {
+    .mobile-nav-icon input:checked~.mobile-menu {
         width: 100%;
         height: 90vh;
         background-color: var(--primary-dark-violet);
+        transition: all 2s ease-in;
         display: flex;
         flex-direction: column;
         position: fixed;
         top: 10vh;
         z-index: 3;
         padding: 0;
-
+        transition: all 1.5s ease-in;
     }
 
-    #hamnav input:checked+label {
+    .mobile-nav-icon input:checked+label {
         display: flex;
         align-items: flex-end;
         justify-content: center;
     }
 
-    #hamnav input:checked+label span:nth-of-type(2) {
+    .mobile-nav-icon input:checked+label span:nth-of-type(2) {
         border-top: none;
     }
 
-    #hamnav input:checked+label span:nth-of-type(1) {
+    .mobile-nav-icon input:checked+label span:nth-of-type(1) {
         transform: rotate(135deg) translateX(10%) translateY(-50%);
         border-top: 3px solid black;
         flex-grow: 0;
         flex-shrink: 1;
     }
 
-    #hamnav input:checked+label span:nth-of-type(3) {
+    .mobile-nav-icon input:checked+label span:nth-of-type(3) {
         transform: rotate(-135deg) translateX(0%) translateY(20%);
         border-top: 3px solid black;
         flex-grow: 0;
