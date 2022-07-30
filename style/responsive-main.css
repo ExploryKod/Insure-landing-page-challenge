@@ -282,6 +282,7 @@
     }
 
     #footer-nav-2 {
+        border-top: none;
         grid-column: 2;
         display: flex;
         flex-direction: column;
