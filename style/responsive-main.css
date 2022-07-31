@@ -1,6 +1,6 @@
 @import './base.css';
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1200px) {
 
     .bg-intro-left-form,
     .bg-intro-right-form,
@@ -46,7 +46,7 @@
         grid-column: 1;
         background-color: var(--primary-dark-violet);
         display: flex;
-        height: 951px;
+        min-height: 951px;
         max-width: 100vw;
         display: grid;
         grid-template-rows: 451px 500px;
@@ -84,8 +84,8 @@
         margin: 0 auto;
         height: 96px;
         width: 327px;
-        font-size: 48px;
-        line-height: 48px;
+        font-size: 3rem;
+        line-height: 3rem;
         font-weight: 400;
         letter-spacing: -0.67px;
         font-family: var(--headings-fonts);
@@ -363,7 +363,8 @@
 
 }
 
-@media screen and (min-width:476px) and (max-width:1024px) {
+@media screen and (min-width:476px) and (max-width:1200px) {
+
 
 
     /* When text is above the image, to be readable we add: */
@@ -389,4 +390,16 @@
         margin-bottom: 0;
     }
 
+    .icon-articles article {
+        width: 75%;
+    }
+
+}
+
+@media screen and (min-width:700px) and (max-width:1200px) {
+
+    .icon-articles article p {
+        display: flex;
+        flex-direction: column;
+    }
 }
