@@ -258,6 +258,7 @@
 
 
     footer {
+        background-image: none;
         margin-top: 140px;
         grid-row: 3;
         grid-column: 1;
@@ -365,8 +366,6 @@
 
 @media screen and (min-width:476px) and (max-width:1200px) {
 
-
-
     /* When text is above the image, to be readable we add: */
     .image-intro {
         display: none;
@@ -392,6 +391,25 @@
 
     .icon-articles article {
         width: 75%;
+    }
+
+    footer {
+        background-image: url(../images/bg-pattern-footer-desktop.svg);
+        background-color: var(--neutral-light-grey);
+        background-position: left top;
+        background-size: 100vw 50vh;
+        background-origin: top;
+        background-blend-mode: luminosity;
+
+    }
+
+    .footer-nav-1 {
+        background-image: none;
+    }
+
+    .footer-nav-2 {
+        background: linear-gradient(to bottom,
+                rgb(250, 250, 250, 0.2) 0% 20%, rgb(250, 250, 250, 0.4) 10% 40%, rgb(250, 250, 250, 0.4) 30% 80%);
     }
 
 }
